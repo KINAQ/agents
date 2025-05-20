@@ -1,3 +1,16 @@
+[project]
+name = "livekit"
+version = "1.0.22"
+description = "LiveKit agents with plugin support"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "python-dotenv>=1.0.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["livekit-agents", "livekit-plugins"]
+
 [tool.uv]
 constraint-dependencies = ['onnxruntime<1.20.0; python_version == "3.9"']
 
